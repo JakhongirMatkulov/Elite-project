@@ -8,7 +8,6 @@ body {
     transition: 0.5s;
 }
 
-/* MAIN-CONTAINER */
 .container-main {
     width: 100%;
     height: fit-content;
@@ -16,7 +15,7 @@ body {
     flex-direction: row;
     align-items: center;
 }
-/******* NAVIGATION-START ********/
+
 .navigation {
     width: 20vw;
     height: 100vh;
@@ -80,9 +79,8 @@ body {
     margin: 30px;
     padding: 20px;
     color: ivory;
-} /************ NAVIGATION-END ***************/
+} 
 
-/***** HEADER-START ******/
 .header {
     width: 80vw;
     height: 100vh;
@@ -152,9 +150,8 @@ body {
 
 .header-btn-primary:focus {
     outline: none;
-} /*************** HEADER-END ****************/
+}
 
-/********* GALERY-START *********/
 .galery {
     width: 80vw;
     height: fit-content;
@@ -204,10 +201,6 @@ body {
     transition: 0.5s ease;
     }
 
-  
-        /***************** GALERY-END ******************/   
-
-/********** BIOGRAPHY-START **********/
 .biography {
     width: 80vw;
     height: fit-content;
@@ -284,9 +277,6 @@ body {
     margin-right: 5%;
 } 
 
-/***************** BIOGRAPHY-END ********************/
-
-    /*********** BLOG-START *************/
 .blog {
     width: 80vw;
     height: fit-content;
@@ -369,74 +359,102 @@ body {
     line-height: 30px;
 }
 
-/******************** BLOG-END ***********************/
 
-
-
-
-/*********** CONTACT-START ************/
-.contact-form {
+.contact {
     width: 80vw;
     height: fit-content;
     margin-left: auto;
-    text-align: center;
-    background-color: #262526;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    background-color:  #262526;   
 }
 
-@media screen and (max-width: 765px) {
-    .contact-form {
-        width: 100%;
-    }
+.contact-body {
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.contact-form-heading {
+.contact-heading {
     width: fit-content;
     height: fit-content;
-    margin-top: 5px;
-    margin-bottom: 50px;
-    margin-right: auto;
-    margin-left: 6%;
-    padding-top: 70px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     font-size: 50px;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
 }
 
-input:focus {
+.form-row {
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    color: white;  
+}
+
+.first-name {
+    width: 350px;
+    margin-left: 5px;
+}
+
+.last-name {
+    width: 350px;
+    margin-left: 5px;
+}
+
+.input-f {
+    width: 345px;
     outline: none;
-}
-
-input {
-    padding: 10px;
-    margin: 10px;
-    border-left: none;
-    border-right: none;
-    border-top: none;
+    border: none;
     border-bottom: 2px solid grey;
     background-color: transparent;
-}
-
-textarea {
-    margin: 10px;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    border-bottom: 2px solid grey;
-    background-color: transparent;
-
-}
-
-.contact-btn-primary{
-    width: 150px;
-    height: fit-content;
     color: white;
+    font-size: medium;
+    margin-top: 10px;
+}
+
+.input-l {
+    width: 350px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid grey;
+    background-color: transparent;
+    color: white;
+    font-size: medium;
+    margin-top: 10px;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    color: white;
+    margin-top: 10px;  
+}
+
+.input {
+    width: 700px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid grey;
+    background-color: transparent;
+    color: white;
+    font-size: medium;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+::placeholder {
+    color: grey; 
+}
+
+.contact-button {
+    width: 200px;
+    color: white;
+    font-size: 10px;
     background-color: rgb(233, 59, 59);
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 10px;
-    margin-top: 35px;
-    margin-bottom: 50px;
     padding: 20px;
     border-radius:50px;
     border: none;
@@ -444,13 +462,13 @@ textarea {
     transition: 0.5s;
 }
 
-.contact-btn-primary:focus{
-    outline: none;
-
+.contact-button:hover {
+    background-color: rgb(24, 90, 24);
 }
 
-.contact-btn-primary:hover{
-    background-color: rgb(24, 90, 24);
+
+.contact-button:focus {
+    outline: none;
 }
 
 .footer {
