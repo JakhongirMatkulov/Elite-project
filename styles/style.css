@@ -72,6 +72,10 @@ body {
   margin-left: 20px;
 }
 
+.social-media-icons img:hover {
+  cursor: pointer;
+}
+
 .header {
   width: 80vw;
   height: 100vh;
@@ -170,6 +174,18 @@ body {
   margin-top: 5px;
 }
 
+.galery img {
+  transition: 1s ease;
+}
+  
+.galery img:hover{
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  cursor: pointer;
+  transition: 1s ease;
+}
+
 @media screen and (max-width: 765px) {
   .galery-picture {
     width: 50%;
@@ -177,14 +193,11 @@ body {
   }
 }
 
-.galery-picture {
-  transition: 0.5s ease;
-}
-
 .testimonials {
   width: 80vw;
   height: 100%;
   margin-left: auto;
+  padding-top: 30px;
   background-color: white;
 }
 
@@ -206,7 +219,7 @@ body {
 
 .custom-testimonial {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
 }
 
@@ -295,7 +308,7 @@ body {
 }
 
 .biography-heading {
-  width: 100%;
+  width: 80%;
   height: 100%;
   color: white;
   font-family: 'Cormorant Unicase', serif;
@@ -393,6 +406,7 @@ body {
   width: 80vw;
   height: fit-content;
   margin-left: auto;
+  padding-bottom: 100px;
   display: flex;
   flex-direction: column;
   background-color: black;
@@ -441,6 +455,10 @@ body {
   margin-left: 160px;
   object-fit: cover;
   background-size: cover;
+}
+
+.blog-items-container img:hover {
+  cursor: pointer;
 }
 
 .container-content {
